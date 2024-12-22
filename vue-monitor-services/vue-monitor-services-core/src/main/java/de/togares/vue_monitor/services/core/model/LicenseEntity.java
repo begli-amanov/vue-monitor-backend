@@ -12,6 +12,13 @@ public class LicenseEntity extends UUIDBasedEntity implements License.Mutable {
 
     private String name;
 
+    public LicenseEntity() {
+    }
+
+    public LicenseEntity(UUID uuid) {
+        this.uuid = uuid;
+    }
+
     @Override
     public void setName(String name) {
         this.name = name;
@@ -24,6 +31,6 @@ public class LicenseEntity extends UUIDBasedEntity implements License.Mutable {
 
     @Override
     public UUID getId() {
-        return UUID.fromString(uuid);
+        return uuid;
     }
 }
