@@ -14,12 +14,12 @@ public class LicenseEntity extends UUIDBasedEntity implements License.Mutable {
 
     @Override
     public void setName(String name) {
-
+        this.name = name;
     }
 
     @Override
     public String getName() {
-        return "";
+        return name;
     }
 
     @Override
