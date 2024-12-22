@@ -10,5 +10,6 @@
         http://www.liquibase.org/xml/ns/pro
         http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd">
 
+    <include file="db/changelog/changes/1_add_license.xml"/>
 
 </databaseChangeLog>
